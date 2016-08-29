@@ -1,6 +1,8 @@
 # Assignment1a-Pokemon-Object
 
-Create a simple Pokemon object class. We are going to use this most of the semester so make a good start!
+Create a simple Pokemon object class. 
+---
+We are going to use this most of the semester so make a good start!
 
 There will be 7 instance variables
   * String name
@@ -42,3 +44,10 @@ CP: <CP>
 ```
 The nickName line should not be there if the nickName is the same as the name. The vertical bar should not be there if type2 is an empty string.
   
+JUnit Testing
+---
+Use the PokemonTest.java file to run JUnit on your Pokemon objects. This will be what I use to determine if your code does what was assigned.
+
+Commenting and Style
+---
+All code should be commented using Javadoc and should follow the (Google Java style guide)[https://google.github.io/styleguide/javaguide.html] for formatting
