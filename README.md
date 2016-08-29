@@ -18,3 +18,9 @@ There should be two constructors.
  2. Takes in 4 parameters: name, number, type1, type2
   * This constructor should set the nickName to the same as the name 
   
+The HP and CP should be set automatically when a Pokemon object is initialized. 
+ * The HP should be a random int between 10 and 150 inclusive.
+ * CP is a little harder.
+  * Make a **double** multiplier that is between Min=1.00 and Max=3.00
+  * *hint:*  ```multiplier = Min + (Max - Min)*randGen.nextDouble();```
+  
