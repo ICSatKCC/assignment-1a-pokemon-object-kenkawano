@@ -23,4 +23,13 @@ The HP and CP should be set automatically when a Pokemon object is initialized.
  * CP is a little harder.
   * Make a **double** multiplier that is between Min=1.00 and Max=3.00
   * *hint:*  ```multiplier = Min + (Max - Min)*randGen.nextDouble();```
+  * CP is then HP * multiplier typecasted to an int
+  
+There should be a complete set of Gets methods for all instance variables. However, only the nickName should have a public Set method.
+
+There should be a public powerUp method that increases the HP and CP. The new HP should be set with this formula:
+ * HP = oldHP + 1.15 + (0.2 * oldHP)
+
+The new CP is then set using the same formula as it is set with initially, BUT it shouldn't be reset if that value ends up to be less than the current CP.
+  
   
