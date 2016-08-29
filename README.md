@@ -50,4 +50,25 @@ Use the PokemonTest.java file to run JUnit on your Pokemon objects. This will be
 
 Commenting and Style
 ---
-All code should be commented using Javadoc and should follow the (Google Java style guide)[https://google.github.io/styleguide/javaguide.html] for formatting
+All code should be commented using Javadoc and should follow the [Google Java style guide](https://google.github.io/styleguide/javaguide.html) for formatting
+
+Exceptions and error checking
+---
+We are going to implement that later. For now, do not worry about checking invalid input parameters or throwing Exceptions.
+
+Grading
+---
+Assignment is worth 100 points.
+
+Rubric:
+ * Must pass all JUnit tests for full credit
+  * Constructor 1: 10 points
+  * Constructor 2: 10 points
+  * Init HP & CP: 15 points
+  * Gets & Sets Methods: 10 points
+  * powerUp Method: 15 points
+  * toString Method: 15 points
+
+  
+ * Commenting and Style:  20 points
+
