@@ -40,4 +40,5 @@ Type: <type1> | <type2>
 HP: <HP>
 CP: <CP>
 ```
+The nickName line should not be there if the nickName is the same as the name. The vertical bar should not be there if type2 is an empty string.
   
