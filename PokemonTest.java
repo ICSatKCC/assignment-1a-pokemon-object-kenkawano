@@ -21,22 +21,67 @@ public class PokemonTest {
    
    /*HP constructor test
    * Checks that HP in range   *
+   * Run it 5 times to check due to randomness
    */
-   @Test public void hpRangeTest(){
+   @Test public void hpRangeTest1(){
       Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
-      int oldHP = p.getHP();
-      int oldCP = p.getCP();
-      p.powerUp();
+      Assert.assertTrue("HP between 10 and 150",(10 <= p.getHP() && p.getHP() <= 150)); 
+   }
+      @Test public void hpRangeTest2(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      Assert.assertTrue("HP between 10 and 150",(10 <= p.getHP() && p.getHP() <= 150)); 
+   }
+      @Test public void hpRangeTest3(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      Assert.assertTrue("HP between 10 and 150",(10 <= p.getHP() && p.getHP() <= 150)); 
+   }
+      @Test public void hpRangeTest4(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      Assert.assertTrue("HP between 10 and 150",(10 <= p.getHP() && p.getHP() <= 150)); 
+   }
+      @Test public void hpRangeTest5(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      Assert.assertTrue("HP between 10 and 150",(10 <= p.getHP() && p.getHP() <= 150)); 
+   }
       
-      Assert.assertTrue("Powerup increases HP and CP",(oldHP < p.getHP() && oldCP <= p.getCP())); 
+   /*CP constructor test
+   * Checks that CP in range*
+   * Atleast equal HP not more than 3x HP
+   * Run it 5 times to check due to randomness
+   */
+   @Test public void cpRangeTest1(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      int currHP = p.getHP();
+      Assert.assertTrue("CP between 1 and 3x HP",(currHP <= p.getCP() && p.getCP() <= (currHP*3))); 
+   }
+   @Test public void cpRangeTest2(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      int currHP = p.getHP();
+      Assert.assertTrue("CP between 1 and 3x HP",(currHP <= p.getCP() && p.getCP() <= (currHP*3))); 
+   }  
+   @Test public void cpRangeTest3(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      int currHP = p.getHP();
+      Assert.assertTrue("CP between 1 and 3x HP",(currHP <= p.getCP() && p.getCP() <= (currHP*3))); 
+   }   
+   @Test public void cpRangeTest4(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      int currHP = p.getHP();
+      Assert.assertTrue("CP between 1 and 3x HP",(currHP <= p.getCP() && p.getCP() <= (currHP*3))); 
+   }
+   @Test public void cpRangeTest5(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      int currHP = p.getHP();
+      Assert.assertTrue("CP between 1 and 3x HP",(currHP <= p.getCP() && p.getCP() <= (currHP*3))); 
    }
    
    
    /* PowerUp test
    * Checks that HP always increases and CP never decreases
+   * Run it 5 times to check due to randomness
    *
    */
-   @Test public void powerUpTest(){
+   @Test public void powerUpTest1(){
       Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
       int oldHP = p.getHP();
       int oldCP = p.getCP();
@@ -44,7 +89,38 @@ public class PokemonTest {
       
       Assert.assertTrue("Powerup increases HP and CP",(oldHP < p.getHP() && oldCP <= p.getCP())); 
    }
-   
+    @Test public void powerUpTest2(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      int oldHP = p.getHP();
+      int oldCP = p.getCP();
+      p.powerUp();
+      
+      Assert.assertTrue("Powerup increases HP and CP",(oldHP < p.getHP() && oldCP <= p.getCP())); 
+   }
+   @Test public void powerUpTest3(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      int oldHP = p.getHP();
+      int oldCP = p.getCP();
+      p.powerUp();
+      
+      Assert.assertTrue("Powerup increases HP and CP",(oldHP < p.getHP() && oldCP <= p.getCP())); 
+   }
+    @Test public void powerUpTest4(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      int oldHP = p.getHP();
+      int oldCP = p.getCP();
+      p.powerUp();
+      
+      Assert.assertTrue("Powerup increases HP and CP",(oldHP < p.getHP() && oldCP <= p.getCP())); 
+   }
+    @Test public void powerUpTest5(){
+      Pokemon p = new Pokemon("Bulbasaur", 1, "Grass", "Poison");
+      int oldHP = p.getHP();
+      int oldCP = p.getCP();
+      p.powerUp();
+      
+      Assert.assertTrue("Powerup increases HP and CP",(oldHP < p.getHP() && oldCP <= p.getCP())); 
+   }  
    /* testing toString method
    * checks that toString is properly formatted.
    */
@@ -139,7 +215,7 @@ public class PokemonTest {
    
    }
    
-   /* Test returning type2 */
+   /* Test get methods */
    @Test
    public void getType2Test1(){
       Pokemon p = new Pokemon("Squirtle", "My Squirtly", 7, "Water", "");
@@ -170,6 +246,9 @@ public class PokemonTest {
    
    }
    
+   /**
+   * Test only set method
+   */
    @Test
    public void setNickNameTest(){
        Pokemon p = new Pokemon("Venusaur", "Lisa's Venusaur", 3, "Grass", "Poison");
