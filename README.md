@@ -29,7 +29,15 @@ There should be a complete set of Gets methods for all instance variables. Howev
 
 There should be a public powerUp method that increases the HP and CP. The new HP should be set with this formula:
  * HP = oldHP + 1.15 + (0.2 * oldHP)
-
-The new CP is then set using the same formula as it is set with initially, BUT it shouldn't be reset if that value ends up to be less than the current CP.
+ * The new CP is set using the same formula as it is set with initially, **BUT** it shouldn't be reset if that value ends up to be less than the current CP.
   
+Finally, there should be a toString method that returns a String in this form:
+```
+Name: <Pokemon name>
+Nickname: <Pokemon nickName>
+Number: <number>
+Type: <type1> | <type2>
+HP: <HP>
+CP: <CP>
+```
   
