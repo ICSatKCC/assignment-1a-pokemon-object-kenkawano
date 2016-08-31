@@ -1,4 +1,4 @@
-# Assignment1a-Pokemon-Object - Due Wed. 9/7.
+# Assignment1a-Pokemon-Object - Due Monday 9/11.
 
 Create a simple Pokemon object class. 
 ---
